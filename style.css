@@ -1,0 +1,115 @@
+/* 
+Fonts
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Slab', serif; 
+*/
+
+body{
+    margin: 0;
+}
+#main-container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url("photo/space.png");
+    background-size: cover;
+    position: relative;
+}
+h1{
+    margin: 0;
+    display: inline-block;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 40%;
+    border-radius: 50px;
+    border: solid white;
+    border-width: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 10%;
+    color: white;
+    cursor: default;
+}
+.card:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 100px rgba(212, 61, 61, 0.788); 
+    border-color: black;
+}
+.earth-title{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 10%;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+.sub-title{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 65%;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif; 
+}
+.earth-img{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius: 100%;
+    background-color: rgba(36, 226, 240, 0.11);
+    padding: 1rem;
+}
+.earth-img:hover{
+    box-shadow: 0 0 100px rgba(99, 236, 225, 0.788); 
+}
+.rotate {
+    animation: rotation 70s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+/* Responsive for mobiles*/
+
+@media only screen and (max-width:600px){
+    .earth-img{
+        width: 60%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        top: 15%;
+    }
+    .card{
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 25%;
+        width: 70%;
+        top: 50%;
+
+    }
+    .earth-title{
+        font-size: 1.5rem;
+    }
+    .sub-title{
+        font-size: 0.8rem;
+        top: 50%;
+    }
+}
